@@ -10,8 +10,9 @@ import os
 #Parameters
 socket.setdefaulttimeout(30)
 id_file = 'PageNames.txt'
-clientid = '913090612110859'
-clientsecret = '933d825823bb355288c9f24c79d296d8'
+#You need to create your own Facebook app, which you can do here: https://developers.facebook.com/apps Doesn't matter what you call it, you just need to pull the unique client ID (app ID) and app secret for your new app.
+clientid = 'XXXXXXX'
+clientsecret = 'XXXXXXXXX'
 outfile = 'SamsungUSA.csv'
 fb_urlobj = urllib.request.urlopen('https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&client_id=' + clientid + '&client_secret=' + clientsecret)
 fb_token = fb_urlobj.read().decode(encoding="latin1")
